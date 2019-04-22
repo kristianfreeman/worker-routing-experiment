@@ -2,7 +2,7 @@
 # The dotenv plugin will do this for you automatically if you place them in .env.
 
 service:
-  name: serverless-workers-blueprint
+  name: worker-routing
 
 provider:
   name: cloudflare
@@ -15,9 +15,10 @@ plugins:
   - serverless-dotenv-plugin
 
 functions:
-  worker:
-    name: serverless-worker
+  worker-routing:
+    name: worker-routing
     script: worker
+    webpack: true
     events:
       - http:
           url: ${env:WORKER_ROUTE}

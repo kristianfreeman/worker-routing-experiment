@@ -1,10 +1,11 @@
 {
-  "name": "serverless-workers-blueprint",
+  "name": "worker-routing",
   "private": true,
-  "description": "Simple blueprint for building Cloudflare Workers and deploying them with the Serverless Framework",
+  "description": "experiments in worker client-side routing",
   "version": "0.1.0",
   "author": "Kristian Freeman <kristian@kristianfreeman.com>",
   "dependencies": {
+    "route-recognizer": "^0.3.4",
     "serverless-cloudflare-workers": "^1.2.0",
     "serverless-dotenv-plugin": "^2.0.1",
     "serverless-webpack": "^5.2.0"
